@@ -145,3 +145,8 @@ textarea{
 .btn:hover{
     background-color: #E0DAE1;
 }
+
+.service2-div{
+    display: flex;
+    flex-direction: column;
+}
