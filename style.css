@@ -4,6 +4,7 @@ body{
 
 header{
     text-align: center;
+    width: 100vw;
 }
 nav{
     background-color: black;
@@ -67,6 +68,7 @@ footer{
     color: aqua;
     display: flex;
     justify-content: flex-start;
+    width: 100vw;
 }
 footer .linkedin{
     margin: 5px;
@@ -127,6 +129,7 @@ form label{
     margin-left: -60px;
 }
 form input, form textarea{
+    width: 200px;
     margin: 30px;
     margin-top: -20px;
 }
@@ -144,4 +147,72 @@ textarea{
 }
 .btn:hover{
     background-color: #E0DAE1;
+}
+
+.service2-div{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 768px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ma_photo{
+        width: 200px;
+        height: auto;
+    }
+    .div1, .div_projets{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer{
+        width: 100vw;
+    }
+    footer a{
+        align-items: center;
+    }
+    footer .linkedin{
+        margin: 5px;
+        margin-left: 50px;
+        gap: 5px;
+        width: auto;
+        height: 70px;
+    }
+    .encadré{
+        display: flex;
+        justify-content: center;
+    }
+    .diplomes_Structure{
+        display: flex;
+        flex-direction: column;
+    }
+    .Parcours *{
+        font-size: 1rem;
+        margin: 0px;
+    }
+    .sous_encadré p{
+        font-size: 1rem;
+        margin: 12px;
+    }
+    form{
+        margin-left: 20px;
+    }
+    form input, form textarea{
+        width: 100px;
+        margin: 20px;
+        margin-top: -20px;
+    }
+    .form{
+        margin-left: 100px;
+    }
+    .service2-div *, .service1{
+        font-size: 1.6rem;
+    }
+    .service1, .service2{
+        width: 90vw;
+        margin: 5px;
+    }
+
 }
